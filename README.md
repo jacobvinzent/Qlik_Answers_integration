@@ -1,8 +1,8 @@
-# Get started with Qlik Embed, OAuth2 M2M Impersonation client
+# Get started with Qlik Answers integration
 
 This extension will configure OAuth2 M2M Impersonation on an existing Qlik tenant using the tenant URL and Client Id and Client Secret from myqlik (https://account.myqlik.qlik.com/account) or a developer key from the tenant.
 
-![images/integration.jpg](https://raw.githubusercontent.com/jacobvinzent/qlik_m2m_impersonation/master/images/integration.jpg)
+![images/integration.jpg](https://raw.githubusercontent.com/jacobvinzent/Qlik_Answers_integration/main/images/integration.jpg)
 
 ## Features
 This extension creates following:

@@ -25,7 +25,10 @@
       }
     ]
   },
-  "homepage": "https://github.com/jacobvinzent/qlik_m2m_impersonation/blob/master/README.md",
+  "homepage": "https://github.com/jacobvinzent/Qlik_Answers_integration/blob/main/README.md",
+  
+  
+  
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
