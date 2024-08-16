@@ -13,7 +13,7 @@ This extension creates following:
 
 1. An activated Qlik Cloud tenant, with a dev token OR Oauth client Id and Secret from myqlik.
 2. Qlik Answers enabled on the tenant
-3. At least on assistant created in the tenant
+3. At least one assistant created in the tenant
 3. Node.js installed 
 
 

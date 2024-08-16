@@ -102,6 +102,7 @@ export function activate(context: ExtensionContext) {
 			let qlikTenantID: any = await getTenantID(QlikSenseToken, QlikSenseURL);
 			let Oauth_record: any = await createOAuthInQlikSense(QlikSenseToken, QlikSenseURL);
 			let Oauth_id = JSON.parse(Oauth_record).clientId;
+			await MakeOauthTrusted(QlikSenseToken, QlikSenseURL,Oauth_id)
 			
 			replaceObject["<replace_OAUTH_clientID_From_Qlik>"] = Oauth_id;
 			
@@ -150,7 +151,7 @@ export function activate(context: ExtensionContext) {
 			term.sendText('npm install');
 			term.sendText('npm start run');
 
-			vscode.commands.executeCommand('vscode.open', QlikSenseURL);
+			vscode.commands.executeCommand('vscode.open', 'http://localhost:3000');
 
 
 			function testForEmptyJSONValue(properties: Array<string>, JSON: any) {
