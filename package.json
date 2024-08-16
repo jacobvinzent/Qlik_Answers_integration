@@ -1,0 +1,63 @@
+{
+  "name": "qlikanswers",
+  "displayName": "Qlik Answers with OAUth authetication",
+  "description": "",
+  "icon": "images/icon.png",
+  "publisher": "vinzent",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "snippets": [
+    
+    ],
+    "commands": [
+      
+      {
+        "command": "qlik.answers",
+        "title": "Setup Qlik Answers integration"
+      }
+    ]
+  },
+  "homepage": "https://github.com/jacobvinzent/qlik_m2m_impersonation/blob/master/README.md",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/node-fetch": "^2.6.9",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8",
+    "eslint": "^8.54.0",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "follow-redirects": "^1.15.6",
+    "node-fetch": "^2.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacobvinzent/qlik_m2m_impersonation"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://www.opensource.org/licenses/mit-license.php"
+    }
+  ]
+}
